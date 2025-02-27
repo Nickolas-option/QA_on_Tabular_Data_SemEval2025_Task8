@@ -17,9 +17,6 @@ This project focuses on building a system capable of accurately answering natura
 
 *   **LLMs (Large Language Models):** We utilized several state-of-the-art instruction-tuned models, including Llama 3, Codestral, Qwen Coder Instruct, and MiniMax-01.
 *   **Programming Languages:** Python is extensively used to build the overall pipeline.
-*   **Libraries:**
-    *   Pandas for data manipulation,
-    *   Libraries for interacting with LLMs.
 
 ## Repository Structure
  * pipeline.ipynb file
@@ -31,8 +28,8 @@ This project focuses on building a system capable of accurately answering natura
 1.  **Clone the repository:**
 
     ```bash
-    git clone [your_repository_url]
-    cd [your_repository_name]
+    git clone https://github.com/Nickolas-option/QA_on_Tabular_Data_SemEval2025_Task8
+    cd QA_on_Tabular_Data_SemEval2025_Task8
     ```
 
 2.  **Create a virtual environment (recommended):**
