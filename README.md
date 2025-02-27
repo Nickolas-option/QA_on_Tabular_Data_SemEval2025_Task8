@@ -1,5 +1,4 @@
-# Team Anotheroption at SemEval-2025 Task 8
-Hybrid Table QA with RAG, Text-to-Code, and LLM-Guided Orchestration
+# Team Anotheroption's solution at SemEval-2025 Task 8: Hybrid Table QA with RAG, Text-to-Code, and LLM-Guided Orchestration
 
 This repository contains the code and related materials for our submission to SemEval-2025 Task 8: Question Answering (QA) over tabular data. Our team, "Anotheroption," developed a hybrid system to address this challenging task using the DataBench benchmark.
 
