@@ -1,0 +1,13 @@
+pandas==2.1.4
+datasets
+openai
+python-dotenv
+tqdm
+timeout-decorator
+fuzzysearch
+sqlalchemy
+regex
+sentence-transformers
+tabulate
+numpy
+torch
