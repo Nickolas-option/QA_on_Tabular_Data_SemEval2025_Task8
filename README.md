@@ -63,5 +63,6 @@ This project focuses on building a system capable of accurately answering natura
 *   We ranked in the top 13 out of 38 teams in the competition’s OpenSource-models-only section, achieving an accuracy score of 80 on the Databench evaluation.
 *   In the global ranking, which includes proprietary models, we placed in the top 20 out of 53 teams while exclusively using open-source models.
 
-
+## Solution Scheme
+<img src="solution_scheme.png" alt="System Architecture" width="500"/>
 
