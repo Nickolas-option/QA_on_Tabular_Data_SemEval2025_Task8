@@ -1,4 +1,5 @@
-# Team Anotheroption's solution at SemEval-2025 Task 8: Closing the Open-Source vs Proprietary LLM Gap in Table QA with Retrieval-Augmented Reasoning
+# Team Anotheroption's solution at SemEval-2025 Task 8: Bridging the Gap Between
+Open-Source and Proprietary LLMs in Table QA
 
 This repository contains the code and related materials for our submission to SemEval-2025 Task 8: Question Answering (QA) over tabular data. Our team, "Anotheroption," developed a hybrid system to address this challenging task using the DataBench benchmark.
 
