@@ -127,13 +127,18 @@ You can customize the run using command-line arguments or a `config.json` file.
 2.  **Initialization:** Sets up the OpenAI client configured for OpenRouter using credentials from `.env` (`src/clients/openai_client.py`).
 3.  **Processing Loop (`main.py`):** Iterates through the dataset questions (handling resuming, batching, and limits).
 4.  **Core Pipeline (`src/processing/pipeline.py`):** For each question, it orchestrates the following steps based on the configuration:
+
     a.  **Python Generation:** Attempts to generate Python (Pandas) code using LLMs (`get_python_solutions`). Executes the code safely with a timeout (`src/processing/python_execution.py`).
-    b.  **Reflection (Optional):** If initial Python attempts fail, it can use LLM reflection on the errors to generate new Python code (`handle_failed_solutions`).
+
+     b.  **Reflection (Optional):** If initial Python attempts fail, it can use LLM reflection on the errors to generate new Python code (`handle_failed_solutions`).
+
     c.  **SQL Fallback (Optional):** If Python approaches fail, it generates SQL queries using an LLM, loads the relevant data into an in-memory SQLite database, and executes the SQL (`src/processing/sql_execution.py`).
-    d.  **E2E Answering (Optional):** Converts relevant parts of the table to text (markdown) and asks an LLM to answer the question directly based on the text (`src/processing/e2e.py`).
+
+     d.  **E2E Answering (Optional):** Converts relevant parts of the table to text (markdown) and asks an LLM to answer the question directly based on the text (`src/processing/e2e.py`).
+
     e.  **Voting:** Gathers all successful results from the enabled stages and uses an LLM to vote for the most likely correct answer (`src/processing/voting.py`).
-5.  **Evaluation (`src/evaluation/evaluate.py`):** Compares the final voted answers against the ground truth in the dataset and calculates accuracy.
-6.  **Logging:** Saves the final results (`solution_results.txt`), evaluation logs (`solution_results_logs.txt`), and detailed attempt/solution logs (in the `logs/` directory).
+6.  **Evaluation (`src/evaluation/evaluate.py`):** Compares the final voted answers against the ground truth in the dataset and calculates accuracy.
+7.  **Logging:** Saves the final results (`solution_results.txt`), evaluation logs (`solution_results_logs.txt`), and detailed attempt/solution logs (in the `logs/` directory).
 
 ## Original Notebook
 
