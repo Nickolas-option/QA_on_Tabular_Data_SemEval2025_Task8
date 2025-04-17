@@ -1,13 +1,13 @@
-pandas==2.1.4
+pandas
 datasets
 openai
 python-dotenv
 tqdm
 timeout-decorator
 fuzzysearch
-sqlalchemy
+SQLAlchemy
 regex
 sentence-transformers
 tabulate
-numpy
 torch
+openpyxl
